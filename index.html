@@ -76,13 +76,65 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                amet saepe numquam similique ad inventore laboriosam error nulla
-                modi voluptas nobis quam, officiis odio necessitatibus natus
-                enim consequuntur iure recusandae.
-              </p>
-              <button class="close-button" data-modal-close></button>
+              
+              <form action="#" method="GET" class="contact-form">
+                <h2 class="contact-form_title">Оставьте свои данные, мы вам перезвоним</h2>
+                <ul class="list-contact-form">
+                  <li class="list contact-info">  
+                    <label class="text-label" for="user-name">Имя</label>
+                    <div class="input-form">
+                        <input type="text" class="contact-form__input" name="user-name" id="user-name">
+                        <svg class="modal-icon" width="18px" height="18px">
+                          <use href="./images/icons/sprite-modal.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                  </li>
+                  <li class="list contact-info"> 
+                    <label class="text-label" for="user-tel">Тел</label>
+                    <div class="input-form">
+                      <input type="tel" class="contact-form__input" name="user-tel" id="user-tel">
+                        <svg class="modal-icon" width="18px" height="18px">
+                          <use href="./images/icons/sprite-modal.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    
+                  </li>
+                  <li class="list contact-info">  
+                    <label class="text-label" for="user-email">Ящик</label>
+                    <div class="input-form">
+                      <input type="email" class="contact-form__input" name="user-email" id="user-email">
+                      <svg class="modal-icon" width="18px" height="18px">
+                        <use href="./images/icons/sprite-modal.svg#icon-email"></use>
+                      </svg>
+                    </div>
+                    
+                  </li>
+
+                  <li class="list contact-info">  
+                    <label class="text-label" for="user-text">Комментарий</label>
+                    <div class="textarea">
+                      <textarea name="" id="user-text" class="contact-form__message" maxlength="80" placeholder="Введите текст"></textarea>
+                    </div>
+                   </li>
+                </ul> 
+                
+                
+                <div class="policy">
+                      <input type="checkbox" name="policy" id="policy">
+                      <label class="text-policy" for="policy">Соглашаюсь с рассылкой и принимаю <a href="" style="color: #2196f3">Условия договора</a></label>
+                </div>     
+                <div class="btn-wrapper">
+                      <button type="submit" class="modal-btn">Отправить</button>
+                </div>
+              </form>
+              
+
+              <button class="close-button" data-modal-close>
+                <svg class="modal-icon" width="18px" height="18px">
+                  <use href="./images/icons/sprite-modal.svg#icon-close"></use>
+                </svg>
+
+              </button>
             </div>
           </div>
         </div>

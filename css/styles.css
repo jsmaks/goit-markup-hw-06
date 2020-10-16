@@ -133,6 +133,12 @@ img {
 /* =================> END NAVIGATION <================ */
 /* =================> BUTTON STYLE Studio<================ */
 .modal-btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -191,11 +197,6 @@ img {
     align-items: center;  */
 
 .close-button {
-  background-image: url(../images/start-page/close-x.svg);
-  background-size: 11px;
-  background-repeat: no-repeat;
-  background-position: center;
-
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -204,6 +205,17 @@ img {
   top: 8px;
   right: 8px;
   position: absolute;
+  background: white;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button svg {
+  fill: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover svg {
+  fill: var(--accent-color);
 }
 
 /* =================> PORTFOLIO BUTTON STYLE <================ */
@@ -813,4 +825,136 @@ padding-top: 60px;
 
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+/* =================>  mobal BTN <================ */
+.contact-form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.btn-wrapper .contact-form__submit {
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.contact-form_title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  padding: 40px 40px;
+}
+
+.contact-form__message {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form__message::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.text-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--color-text-grey);
+}
+.textarea {
+  margin-top: 4px;
+}
+.contact-form__input:hover,
+.contact-form__input:focus {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+
+.contact-form__message:hover,
+.contact-form__message:focus {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+
+.contact-form_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.text-policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 7px;
+}
+.policy {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contact-info:last-child {
+  margin-bottom: 20px;
+}
+
+/* .contact-form__input:not(:last-child) {
+  margin-bottom: 20px;
+} */
+.input-form {
+  margin-top: 4px;
+  position: relative;
+}
+.input-form svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  fill: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transform: translateY(-50%);
+}
+
+.contact-form__input:hover + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.contact-form__input:focus + .modal-icon {
+  fill: var(--accent-color);
 }
