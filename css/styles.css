@@ -958,3 +958,48 @@ padding-top: 60px;
 .contact-form__input:focus + .modal-icon {
   fill: var(--accent-color);
 }
+.policy {
+  display: flex;
+}
+.label {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.icon-checked {
+  content: '';
+  display: inline-block;
+
+  width: 16px;
+  height: 15px;
+
+  border: 1px solid #212121;
+  border-radius: 2px;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.checkbox:checked + .icon-checked {
+  border-color: #2196f3;
+  background-color: var(--accent-color);
+  background-image: url(../images/icons/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: recy(0 0 0 0);
+  overflow: hidden;
+}
+.label-text {
+  margin-left: 23px;
+}
