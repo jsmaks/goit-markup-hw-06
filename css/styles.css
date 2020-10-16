@@ -896,12 +896,14 @@ padding-top: 60px;
 .contact-form__input:focus {
   border: 1px solid var(--accent-color);
   cursor: pointer;
+  outline: none;
 }
 
 .contact-form__message:hover,
 .contact-form__message:focus {
   border: 1px solid var(--accent-color);
   cursor: pointer;
+  outline: none;
 }
 
 .contact-form_title {
