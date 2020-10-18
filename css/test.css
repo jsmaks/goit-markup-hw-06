@@ -1,45 +1,29 @@
-.button {
-  padding: 0;
-  margin: 0;
-  border: none;
-  background-color: greenyellow;
-  color: #2a2a2a;
+.option {
+  display: block;
+  margin-bottom: 0.25em;
 }
-/* .button-icon {
-  width: 100px;
-  height: 100px;
-} */
 
-.actions {
-  list-style: none;
-  /* border: 5px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px; */
+.check {
+  padding-left: 1.2em;
+}
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
-  text-decoration: none;
+.check__box {
+  position: absolute;
+  margin-top: 0.2em;
+  margin-left: -1em;
+  width: 0.6em;
+  height: 0.6em;
+  box-shadow: 0 0 0 0.1em #4a90e2;
 }
-.bx {
-  display: flex;
+
+.check__input:checked + .check__box {
 }
-.link {
-  display: flex;
-  text-decoration: none;
-  margin-right: 50px;
-  border: 1px solid orange;
-  /* border: 5px solid #afb1b8; */
-  box-sizing: border-box;
-  border-radius: 10px;
-  box-sizing: border-box;
-  width: 170px;
-  height: 90px;
-  justify-content: center;
-  align-items: center;
-}
-.action:hover {
-  border: 1px solid #4f2ea8;
-}
-.action:focus {
-  border: 1px solid #4f2ea8;
-}
-.acrion {
+
+.check__input:focus + .check__box {
 }
